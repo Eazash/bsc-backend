@@ -10,7 +10,7 @@ export default registerAs(
     database: process.env.POSTGRES_DATABASE,
     port: parseInt(process.env.POSTGRES_PORT),
     type: 'postgres',
-    entities: ['**/*.entity{.ts,.js}'],
+    entities: ['dist/**/*.entity{.ts,.js}'],
     migrationsTableName: 'migration',
     migrations: ['src/migration/*.ts'],
     cli: {
